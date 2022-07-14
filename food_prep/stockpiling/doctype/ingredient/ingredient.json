@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ingredient_name",
+ "creation": "2022-07-14 07:39:40.254830",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ingredient_name",
+  "unit",
+  "stocking_section",
+  "restocking_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "ingredient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ingredient Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "g\nKg\noz"
+  },
+  {
+   "fieldname": "stocking_section",
+   "fieldtype": "Section Break",
+   "label": "Stocking"
+  },
+  {
+   "fieldname": "restocking_type",
+   "fieldtype": "Select",
+   "label": "Restocking Type",
+   "options": "Fresh\nShort Term\nLong Term"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-14 08:36:04.159649",
+ "modified_by": "Administrator",
+ "module": "Stockpiling",
+ "name": "Ingredient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "ingredient_name"
+}
